@@ -7,9 +7,9 @@ object IrcBot {
 	var nick: String = "NICK ScalaBot\r\n";
 	var user: String = "USER ScalaBot ScalaBot ScalaBot :ScalaBot\r\n";
 	var join: String = "JOIN #mootsinsuits\r\n";
-    val socket = new Socket(InetAddress.getByName("irc.tm"), 6667)
-    var in = new BufferedSource(socket.getInputStream).getLines
-    val out = new PrintStream(socket.getOutputStream)
+    	val socket = new Socket(InetAddress.getByName("irc.tm"), 6667)
+	val in = new BufferedSource(socket.getInputStream).getLines
+	val out = new PrintStream(socket.getOutputStream)
 	while(true){
 		var data: String = in.next;
 		println(data);
