@@ -39,7 +39,7 @@ object IrcBot {
 			socket.close;
 		 }
 		if(data contains ".scala"){
-			out.println("PRIVMSG #mootsinsuits :I am a bot made in scala");
+			out.println("PRIVMSG #mootsinsuits :I am a bot made in scala\r\n");
 			out.flush();
 		}
 	  }
